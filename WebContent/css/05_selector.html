@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+			/*input 중 checked attribute가 있는 모든 것*/
+			/*input:checked {
+				width: 20px;
+				height: 20px;
+			}*/
+			
+			/*input 중 name=fav_lang 이면서 checked attribute가 있는 모든 것*/
+			input[name=fav_lang]:checked {
+				width: 20px;
+				height: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			<div>
+				<input id="fav_lagunage1" name="fav_lang" type="radio" value="html"/>
+				<label for="fav_language1">HTML</label>
+				<br/>
+				<input id="fav_lagunage2" name="fav_lang" type="radio" value="html" checked/>
+				<label for="fav_language2">HTML</label>
+				<br/>
+				<input id="fav_lagunage3" name="fav_lang" type="radio" value="html"/>
+				<label for="fav_language3">HTML</label>
+				<br/>
+			</div>
+			
+			<hr/>
+			
+			<div>
+				<input id="hobby1" type="checkbox" value="Game"/>
+				<label for="hobby1">Game</label>
+				<br/>
+				<input id="hobby2" type="checkbox" value="Movie" checked/>
+				<label for="hobby2">Movie</label>
+				<br/>
+				<input id="hobby3" type="checkbox" value="Music"/>
+				<label for="hobby3">Music</label>
+				<br/>
+			</div>
+			
+			
+		</form>
+	</body>
+</html>
