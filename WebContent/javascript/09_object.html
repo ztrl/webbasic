@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+		
+		<!-- jQuery library -->
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+		
+		<!-- Popper JS -->
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+		
+		<!-- Latest compiled JavaScript -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+		
+		<script>
+			const car = {};
+			car.name = "그랜저";
+			car.price = 50000000;
+			car.speed = 0;
+			car.start = function() {
+				console.log("시동을 켭니다");
+				this.speed = 10;
+			}
+			car.stop = function() {
+				console.log("시동을 켭니다");
+				this.speed = 0;
+			}
+			
+			
+			console.log(car.name, car["name"]);
+			console.log(car.price);
+			console.log(car.speed);
+			
+			car.name = "포르쉐";
+			car.price = 200000000;
+			car.speed = 100;
+			
+			console.log(car.name);
+			console.log(car.price);
+			console.log(car.speed);
+			
+			car.start();
+			car.stop();
+			
+			function getValue(kind) {
+				return car[kind];
+			}
+			
+			console.log(getValue("name"));
+			console.log(getValue("price"));
+			
+			
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+		
+		<!-- jQuery library -->
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+		
+		<!-- Popper JS -->
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+		
+		<!-- Latest compiled JavaScript -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+		
+		<script>
+			function fun1() {
+				console.log("함수 실행1");
+				console.log("함수 실행2");
+			}
+			
+			var fun2 = fun1;
+			
+			fun1();
+			fun2();
+			
+			var fun3 = function() {
+				console.log("함수 실행3");
+				console.log("함수 실행4");
+			};
+			
+			fun3();
+			
+			var fun4 = () => { 
+				console.log("함수 실행5"); 
+				console.log("함수 실행6");
+			};
+			
+			fun4();
+			
+			var fun5 = function(x, y) {
+				return x + y;
+			};
+			
+			var result1 = fun5(2, 3);
+			console.log(result1);
+			
+			var fun6 = x => x + 1;
+			
+			var result2 = fun6(2);
+			console.log(result2);
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

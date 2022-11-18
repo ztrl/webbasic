@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+		
+		<!-- jQuery library -->
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+		
+		<!-- Popper JS -->
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+		
+		<!-- Latest compiled JavaScript -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+		
+		<script>
+			var x1;
+			
+			if(true) {
+				x1 = 10;
+			}
+			
+			console.log("x1:" + x1);
+			
+			if(true) {
+				var x2 = 10;
+			}
+			
+			console.log("x2:" + x2);
+			
+			if(true) {
+				let x3 = 10;
+			}
+			
+			//console.log("x3:" + x3);
+			
+			function funName1() {
+				console.log("실행");
+				if (true) {
+					var x4 = 10;
+					x5 = 10;
+				}
+				console.log("x4:" + x4);
+				console.log("x5:" + x5);
+			}
+			
+			function funName2() {
+				console.log("x1:" + x1);
+				console.log("x2:" + x2);
+				//console.log("x3:" + x3);
+				//console.log("x4:" + x4);
+				console.log("x5:" + x5);
+			}
+		</script>
+	</head>
+	<body>
+		<button onclick="funName1()" class="btn btn-success">funName1() 호출</button>
+		<button onclick="funName2()" class="btn btn-success">funName2() 호출</button>
+	</body>
+</html>
