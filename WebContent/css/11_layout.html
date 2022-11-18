@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+			* {
+				padding: 0px;
+				margin: 0px;
+			}
+			
+			#wrapper {
+				width: 1000px;
+				margin: 0px auto;
+				border: solid;
+			}
+			
+			#header {
+				border: solid;
+				height: 50px;
+			}
+			
+			#footer {
+				border: solid;
+				clear: both;
+			}
+			
+			#center {
+				display: flex;
+			}
+			
+			.sidebar {
+				height: 200px;
+				border: solid;
+				flex-grow: 1;
+			}
+			
+			.content {
+				height: 200px;
+				border: solid;
+				flex-grow: 3;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">thisisheader</div>
+	
+			<div id="center">
+				<div class="sidebar">this is sidebar</div>
+				<div class="content">this is content</div>
+			</div>
+	
+			<div id="footer">thisisfooter</div>
+		</div>
+	</body>
+</html>

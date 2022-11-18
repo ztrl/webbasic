@@ -4,12 +4,11 @@
 		<meta charset="UTF-8">
 		<title>Insert title here</title>
 		<style>
-		
 			* {
-				/*border: 1px solid black;*/
 				padding: 0px;
 				margin: 0px;
 				box-sizing: border-box;
+				/*border: 1px solid;*/
 			}
 			
 			#advertisement_wrapper {
@@ -21,7 +20,7 @@
 			}
 			
 			#wrapper {
-				width: 70%;
+				width: 1800px;
 				margin: 0px auto;
 			}
 			
@@ -34,73 +33,64 @@
 			}
 			
 			#submenu {
-				width: 96%;
+				width: 96.5%;
+				display: flex;
+				justify-content: space-between;
 				margin: 0px auto;
-			}
-			
-			#category {
-				float: left;
 			}
 			
 			#maincontent_top {
-				margin: 0px auto;
-			}
-			
-			#maincontent_mid {
-				margin: 0px auto;
+				display: flex;
+				justify-content: space-around;
 			}
 			
 			#news_menu {
-				float: left;		
+				padding-right: 40px;
+				display: flex;
+				flex-direction: column;		
 			}
 			
-			#newsspace{
-				float: left;
-				box-sizing: border-box;
+			#login {
+				padding-right: 10px;
+				display: flex;
+				flex-direction: column;
+				align-content: space-between;
 			}
 			
-			#car {
+			#maincontent_mid {
+				display: flex;
+				justify-content: space-around;
 				margin: 0px auto;
 			}
 			
-			#readable{
-				float : left;
+			#car {
+				display: flex;
+	      		justify-content: space-around;
+	      		flex-direction: column;		
 			}
 	      
 	      	#read {
-	   			float : left;
+				display: flex;
+	      		justify-content: space-around;
 	      	}   
 	      	
-	      	.menu3{
-	      		float : left;
-	      	}	
-			
-			#login{		
-				box-sizing: border-box;
-			}
+	      	#shopping {
+	      		width: 31%;
+	      		padding-right: 10px;
+	      		padding-bottom: 100px;
+	      	}
 			
 			img {
 				display: block;
 				margin: 0px auto;
 			}
-			
-			.con2 {
-				padding-top: 20px;
-			}
-			
-			.con3 {
-				padding-top: 20px;
-			}
-		
 		</style>
 	</head>
 	<body>
 	
 		<div id="advertisement_wrapper">
 			<div id="advertisement">
-			
 				<img src="../images/advertisement.png"/>
-				
 			</div>
 		</div>
 		
@@ -125,7 +115,7 @@
 				
 					<div id="category">
 				
-					<img src="../images/category.png"/>
+						<img src="../images/category.png"/>
 					
 					</div>
 					
@@ -143,27 +133,17 @@
 			
 				<div id="news_menu">
 				
-					<div id="newsspace">
-						<img src="../images/ynews.png">
-						<img src="../images/newsstand.png">
-						<img src="../images/newslist.png">	
-					</div>
+					<img src="../images/ynews.png" style="width: 104%">
+					<img src="../images/newsstand.png" style="width: 104%">
+					<img src="../images/newslist.png" style="width: 104%">
 					
 				</div>
 				
 				<div id="login">	
 				
-					<div class="con1">			
-						<img src="/webbasic/images/로그인.png" />
-					</div>
-								
-					<div class="con2">
-						<img src="/webbasic/images/환율.png"/>
-					</div>
-							
-					<div class="con3">
-						<img src="/webbasic/images/트렌드쇼핑.png"/>
-					</div>
+					<img src="/webbasic/images/로그인.png"  style="padding-top: 10px"/>						
+					<img src="/webbasic/images/환율.png" style="padding-top: 5px"/>
+					<img src="/webbasic/images/트렌드쇼핑.png" style="padding-top: 50px"/>
 						
 				</div>
 				
@@ -179,27 +159,27 @@
 		            </div>
 		         
 		            <div id = "read">
-		               <img class="menu3" src="../images/read1.png" width="590px" >
-		               <img class="menu4" src="../images/read2.png" width="600px" >
+		               <img class="menu3" src="../images/read1.png">
+		               <img class="menu4" src="../images/read2.png">
 		            </div>
 		            
 				</div>
+				
+				<table id="shopping">
+					<tr>
+						<td><img src="/webbasic/images/5-1.png" /></td>
+						<td><img src="/webbasic/images/5-2.png"/></td>
+						<td><img src="/webbasic/images/5-3.png"/></td>      
+					</tr>            
+					<tr>
+						<td><img src="/webbasic/images/6-4.png" /></td>
+						<td><img src="/webbasic/images/6-5.png"/></td>
+						<td><img src="/webbasic/images/6-6.png"/></td>
+					</tr>   
+				</table>
 
 			</div>
-				
-			<table>
-				<tr>
-					<td><img src="/webbasic/images/5-1.png" /></td>
-					<td><img src="/webbasic/images/5-2.png"/></td>
-					<td><img src="/webbasic/images/5-3.png"/></td>      
-				</tr>            
-				<tr>
-					<td><img src="/webbasic/images/6-4.png" /></td>
-					<td><img src="/webbasic/images/6-5.png"/></td>
-					<td><img src="/webbasic/images/6-6.png"/></td>
-				</tr>   
-			</table>
-			
+
 		 </div>
 	</body>
 </html>
