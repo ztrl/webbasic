@@ -14,44 +14,17 @@
 		
 		<!-- Latest compiled JavaScript -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-		
-		<script>
-			function fun1() {
-				console.log("함수 실행1");
-				console.log("함수 실행2");
-			}
-			
-			var fun2 = fun1;
-			
-			fun1();
-			fun2();
-			
-			var fun3 = function() {
-				console.log("함수 실행3");
-				console.log("함수 실행4");
-			};
-			
-			fun3();
-			
-			var fun4 = () => { 
-				console.log("함수 실행5"); 
-				console.log("함수 실행6");
-			};
-			
-			fun4();
-			
-			var fun5 = function(x, y) {
-				return x + y;
-			};
-			
-			var result1 = fun5(2, 3);
-			console.log(result1);
-			
-			var result2 = ((x, y) => x + y)(27, 39);
-			console.log(result2);
-		</script>
 	</head>
 	<body>
-		
+		<script>
+			let ssn = "123456-1234567";
+			console.log(ssn.length);
+			console.log(ssn.charAt(7));
+			console.log(ssn.substring(7));
+			console.log(ssn.substr(2, 2));
+			
+			let ssnArray = ssn.split("-");
+			console.log(ssnArray, ssnArray[0], ssnArray[1]);
+		</script>
 	</body>
 </html>
