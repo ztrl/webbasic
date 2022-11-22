@@ -14,49 +14,36 @@
 		
 		<!-- Latest compiled JavaScript -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+		
 		<script>
-			var timerId;
+		
 			function fun1() {
-				console.log("fun1 실행 시작");
-				/*setTimeout(function() {
-					console.log("알람이 울린데스");
-				}, 3000);*/
 				
-				//setTimeout(alarm(), 3000);
-				
-				//callback 부분
-				timerId = setTimeout(() => {
-					console.log("알람인 데스");
-				}, 3000);
-				
-				//비동기 (async) 발생
-				console.log("fun1 실행 종료");
-			}
-			
-			function alarm() {
-				console.log("알람이 울리는데스");
-			}
-			
-			function fun2() {
-				clearTimeout(timerId);
-			}
-			
-			function fun3() {
+				try {
+					console.log("실행1");
+					fun2();
+					console.log("실행2");
+				}
+				catch(err) {
+					console.log("예외처리");
+					console.log(err);
+				}
+				finally {
+					console.log("마무리");
+				}
 				
 			}
+		
 		</script>
 	</head>
 	<body>
 		<div class="card">
 			<div class="card-header">
-				Callback
+				Exception handling
 			</div>
 			<div class="card-body">
 				<button onclick="fun1()" class="btn btn-info btn-sm">
-					주어진 시간 후에 실행
-				</button>
-				<button onclick="fun2()" class="btn btn-info btn-sm">
-					주어진 시간 전에 취소
+					Exception handling
 				</button>
 			</div>
 		</div>

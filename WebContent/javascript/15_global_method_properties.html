@@ -36,12 +36,13 @@
 			
 			//NaN
 			//NaN is a 'number' that is not a legal number;
-			let var3 = "100o";
+			let var3 = parseInt(".1.1");
+			console.log(var3);
 			if (var3 == NaN) {
-				console.log("\"100o\"는 숫자가 아니다");
+				console.log("\".1.1\"는 숫자가 아니다");
 			}
 			else {
-				console.log("\"100o\"는 NaN이 아닙니다");
+				console.log("\".1.1\"는 NaN이 아닙니다");
 			}
 			
 			let var4 = 100 - "car";
